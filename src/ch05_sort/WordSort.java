@@ -28,9 +28,9 @@ public class WordSort {
 		});
 		
 		System.out.println(words[0]);
-		for(int i=0; i<words.length; i++) {
+		for(int i=1; i<words.length; i++) {
 			// 중복 제거
-			if(i!=0 && !words[i].equals(words[i-1])) {
+			if(!words[i].equals(words[i-1])) {
 				System.out.println(words[i]);
 			}
 		}
